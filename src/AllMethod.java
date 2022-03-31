@@ -14,7 +14,7 @@ public class AllMethod {
 	public void addFiles()
 	{
 	
-		System.out.println("Enter your name \n");
+		System.out.println("Enter your  folder name \n");
 		foldername=sc.nextLine();
 		System.out.println("Enter file name which you want to create");
 	    filename=sc.nextLine();
@@ -26,7 +26,7 @@ public class AllMethod {
 		{
 			try {
 				file2.createNewFile();
-				System.out.println("File created Successfully in  "+foldername+ " directory");
+				System.out.println("File created Successfully in  "+foldername+ " folder");
 			} 
 			catch (IOException e) {
 				System.out.println("file not created");
@@ -47,13 +47,13 @@ public class AllMethod {
 	}
 	public void deleteFiles()
 	{
-		System.out.println("Enter your name");
+		System.out.println("Enter your folder name from which file to be deleted");
 		 foldername=sc.nextLine();
 	     newpath=path;
 		 file=new File(newpath);
 		if(file.isDirectory())
 		{
-			System.out.println("Enter File name");
+			System.out.println("Enter File name to be deleted");
 			filename=sc.nextLine();
 		     file2=new File(newpath+"\\"+filename);
 			
@@ -66,7 +66,7 @@ public class AllMethod {
 			}
 		}
 		else {
-				System.out.println("No such directory found");
+				System.out.println("No such folder found");
 			}
 		
 		
@@ -74,17 +74,17 @@ public class AllMethod {
 	}
 	public void searchFiles()
 	{
-		System.out.println("Enter your name:");
+		System.out.println("Enter your folder name:");
 		foldername=sc.nextLine();
 		System.out.println("Enter file name which you want to search:");
 		filename=sc.nextLine();
 		file=new File(path+foldername+"//"+filename);
 		if(file.exists())
 		{
-			System.out.println("File is present in directory: "+foldername);
+			System.out.println("File is present in folder: "+foldername);
 		}
 		else {
-			System.out.println("file is not found in "+foldername+" directory");
+			System.out.println("file is not found in "+foldername+" folder");
 		}
 		}
 	public void getAllFiles()

@@ -9,7 +9,7 @@ private int ch;
 		do
 		{
 		System.out.print("\n\nEnter your Choice from the following menu");
-		System.out.print("\n \n1.list of all Files"+"\n"+"2.User Interface"+"\n"+"3.Close"+"\n");
+		System.out.print("\n \n1.list of Files"+"\n"+"2.file operations"+"\n"+"3.Close"+"\n");
 		ch=Integer.parseInt(sc.nextLine());
 		AllMethod allM=new AllMethod();
 
@@ -21,9 +21,9 @@ private int ch;
 			do
 				{		
 					System.out.println("*******************************");
-					System.out.println("Choose From following option "+"\n"+"1.Add File"+"\n"+"2.Delete File"+"\n"+"3.Search File"+"\n"+"4.Back");
+					System.out.println("Choose From following option "+"\n"+"1.Create File"+"\n"+"2.Remove File"+"\n"+"3.Search File"+"\n"+"4.Exit");
 					System.out.println("*******************************");
-					//obj=new Scanner(System.in);
+					//obj=new Scanner(System.in); taking user input from keyboard
 					ch1=Integer.parseInt(sc.nextLine());
 					switch(ch1)
 					{
