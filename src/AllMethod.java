@@ -21,7 +21,7 @@ public class AllMethod {
 		newpath=path+foldername;
 		File file=new File(newpath);
 		boolean b=file.mkdir();
-		File file2=new File(newpath);
+		File file2=new File(newpath+"\\"+filename);
 		if(b)
 		{
 			try {
@@ -49,7 +49,7 @@ public class AllMethod {
 	{
 		System.out.println("Enter your folder name from which file to be deleted");
 		 foldername=sc.nextLine();
-	     newpath=path;
+	     newpath=path+foldername;
 		 file=new File(newpath);
 		if(file.isDirectory())
 		{
